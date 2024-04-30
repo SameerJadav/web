@@ -1,5 +1,4 @@
 export const SITE = {
-  name: "Sameer Jadav",
   description: "Software engineer.",
   url: "https://sameerjadav.com",
   image: "https://sameerjadav-og.vercel.app",

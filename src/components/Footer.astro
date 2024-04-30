@@ -1,5 +1,6 @@
 ---
 import ExternalLink from "~/components/ExternalLink.astro";
+import InternalLink from "~/components/InternalLink.astro";
 import { SITE } from "~/config";
 
 const currentYear = new Date().getFullYear();
@@ -71,6 +72,23 @@ const currentYear = new Date().getFullYear();
       >
       <span class="sr-only">Link to my Twitter</span>
     </ExternalLink>
+    <InternalLink highlight href="/rss.xml">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="size-6"
+        ><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"
+        ></path><circle cx="5" cy="19" r="1"></circle></svg
+      >
+      <span class="sr-only">RSS feed</span>
+    </InternalLink>
   </div>
   <p class="mt-4 text-center text-sm text-gray-11">
     Sameer &copy; {currentYear}

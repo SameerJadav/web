@@ -19,9 +19,9 @@ const posts = (await getCollection("blog")).sort(
   <head>
     <BaseHead
       title="Blogs"
-      description="Sameer's writings"
+      description="A tech-savvy blog offering coding insights, programming tutorials, and personal anecdotes."
       type="website"
-      url=`${SITE.url}/blogs`
+      url=`${Astro.site}blogs`
       image=`${SITE.image}/og?title=Blogs`
       imageAlt="Blogs"
     />

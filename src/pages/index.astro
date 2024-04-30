@@ -20,8 +20,8 @@ const posts = (await getCollection("blog")).sort(
       title={SITE.author}
       description={SITE.description}
       type="website"
-      url={SITE.url}
-      image=`${SITE.url}/og.png`
+      url={Astro.site?.toString()!}
+      image=`${Astro.site}og.png`
       imageAlt={SITE.author}
     />
   </head>

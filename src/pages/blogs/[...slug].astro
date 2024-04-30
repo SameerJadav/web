@@ -27,7 +27,7 @@ const { Content } = await post.render();
       title={post.data.title}
       description={post.data.description}
       type="article"
-      url=`${SITE.url}/blogs/${post.slug}`
+      url=`${Astro.site}blogs/${post.slug}`
       image=`${SITE.image}/blog-2?title=${post.data.title}`
       imageAlt={post.data.title}
     />
