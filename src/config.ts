@@ -30,15 +30,15 @@ export const PROJECTS: Project[] = [
     title: "Guestbook",
     description:
       "A modern, performant, and accessible web application. Built using Next.js 14, this app uses server-side rendering to deliver content swiftly, ensuring a seamless experience.",
-    live: "https://guestbook.sameerjadav.me",
+    live: "https://guestbook.sameerjadav.com",
     repo: "https://github.com/SameerJadav/guestbook",
   },
   {
-    title: "sameerjadav.me",
+    title: "sameerjadav.com",
     description:
       "My personal website, featuring interactive blogs and a bunch of cool stuff. Built with Astro.",
-    live: "https://sameerjadav.me",
-    repo: "https://github.com/SameerJadav/sameerjadav.me",
+    live: "https://sameerjadav.com",
+    repo: "https://github.com/SameerJadav/sameerjadav.com",
   },
   {
     title: "Fatality Studios",
