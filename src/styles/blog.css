@@ -1,0 +1,41 @@
+@import "./syntax-highlighting.css";
+
+.markdown h2 {
+  @apply mt-6 scroll-m-6 text-xl font-bold;
+}
+
+.markdown p {
+  @apply mt-4 leading-7;
+}
+
+.markdown a {
+  @apply font-medium underline decoration-gray-7 underline-offset-2 hover:text-blue-10 hover:decoration-gray-8 focus-visible:outline-none focus-visible:ring-1  focus-visible:ring-gray-7;
+}
+
+.markdown strong {
+  @apply font-bold;
+}
+
+.markdown ul {
+  @apply ml-6 mt-4 list-disc;
+}
+
+.markdown ol {
+  @apply ml-6 mt-4 list-decimal;
+}
+
+.markdown li {
+  @apply my-2;
+}
+
+.markdown blockquote {
+  @apply mt-4 border-l-2 border-gray-6 pl-6 italic text-gray-11;
+}
+
+.markdown hr {
+  @apply my-6 border-gray-6;
+}
+
+.markdown code {
+  @apply rounded-sm border border-gray-6 bg-gray-3 px-1 py-0.5 font-mono text-sm;
+}

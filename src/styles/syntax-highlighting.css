@@ -1,0 +1,48 @@
+code::-webkit-scrollbar,
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+code,
+pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+figure[data-rehype-pretty-code-figure] {
+  @apply mt-4 overflow-hidden rounded-md border border-gray-7 bg-gray-2;
+}
+
+figure[data-rehype-pretty-code-figure] > pre {
+  @apply overflow-x-auto py-2 font-mono;
+}
+
+figure[data-rehype-pretty-code-figure] > pre > code {
+  @apply m-0 grid overflow-x-auto break-words border-none bg-transparent p-0 font-mono text-base;
+}
+
+figcaption[data-rehype-pretty-code-title] {
+  @apply border-b border-b-gray-7 px-4 py-2 font-mono text-base font-bold;
+}
+
+span[data-line] {
+  @apply px-4;
+}
+
+code[data-line-numbers] {
+  counter-reset: lineNumber;
+}
+
+code[data-line-numbers] > span[data-line]::before {
+  counter-increment: lineNumber;
+  content: counter(lineNumber);
+  @apply mr-4 inline-block w-4 text-right text-gray-9;
+}
+
+span[data-highlighted-line] {
+  @apply bg-gray-3 px-4; /* border + padding = 16px */
+}
+
+code[data-line-numbers] > span[data-highlighted-line]::before {
+  @apply text-gray-12;
+}

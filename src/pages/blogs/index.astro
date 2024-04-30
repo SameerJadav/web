@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import H1 from "~/components/H1.astro";
+import Header from "~/components/Header.astro";
+import InternalLink from "~/components/InternalLink.astro";
+import FormattedDate from "~/components/FormattedDate.astro";
+import "~/styles/globals.css";
+import BaseHead from "~/components/BaseHead.astro";
+import { SITE } from "~/config";
+import Footer from "~/components/Footer.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => a.data.date.valueOf() - b.data.date.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Blogs"
+      description="Sameer's writings"
+      type="website"
+      url=`${SITE.url}/blogs`
+      image=`${SITE.image}/og?title=Blogs`
+      imageAlt="Blogs"
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <H1>Blogs</H1>
+      <div class="mt-6 space-y-4">
+        {
+          posts.map((post) => (
+            <div class="space-y-2">
+              <InternalLink
+                className="text-xl"
+                href={`/blogs/${post.slug}`}
+                highlight
+                underline
+              >
+                {post.data.title}
+              </InternalLink>
+              <p class="text-gray-11">{post.data.description}</p>
+              <FormattedDate date={post.data.date} class="text-gray-11" />
+            </div>
+          ))
+        }
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
