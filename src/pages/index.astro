@@ -159,7 +159,7 @@ const posts = (await getCollection("blog")).sort(
       </section>
       <section>
         <h2 class="mt-8 text-3xl font-bold md:text-4xl">Latest posts</h2>
-        <div class="mt-4 space-y-4">
+        <div class="mt-4 flex flex-col gap-2">
           {
             posts.slice(0, 4).map((post) => (
               <InternalLink
