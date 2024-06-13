@@ -1,6 +1,6 @@
 export const SITE = {
   description: "Software engineer.",
-  url: "https://sameerjadav.com",
+  url: "https://sameerjadav.vercel.app",
   image: "https://sameerjadav-og.vercel.app",
   author: "Sameer Jadav",
   twitterId: "@SameerJadav_",
@@ -30,15 +30,15 @@ export const PROJECTS: Project[] = [
     title: "Guestbook",
     description:
       "A modern, performant, and accessible web application. Built using Next.js 14, this app uses server-side rendering to deliver content swiftly, ensuring a seamless experience.",
-    live: "https://guestbook.sameerjadav.com",
+    live: "https://guestbook-sam.vercel.app",
     repo: "https://github.com/SameerJadav/guestbook",
   },
   {
-    title: "sameerjadav.com",
+    title: "Personal Website",
     description:
       "My personal website, featuring interactive blogs and a bunch of cool stuff. Built with Astro.",
-    live: "https://sameerjadav.com",
-    repo: "https://github.com/SameerJadav/sameerjadav.com",
+    live: SITE.url,
+    repo: "https://github.com/SameerJadav/web",
   },
   {
     title: "Fatality Studios",
