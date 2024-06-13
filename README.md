@@ -1,5 +1,7 @@
 # Personal Site
 
+My personal website, featuring interactive blogs and a bunch of cool stuff. Built with Astro.
+
 ## Tech Stack
 
 - **Astro:** [Next.js](https://astro.build)
