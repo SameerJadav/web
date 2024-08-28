@@ -21,6 +21,19 @@ interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "EnvParse",
+    description:
+      "Go package designed for efficiently parsing environment variables from .env files. It provides a straightforward and performant way to load environment variables into your Go applications.",
+    live: "https://pkg.go.dev/github.com/SameerJadav/envparse",
+    repo: "https://github.com/SameerJadav/envparse",
+  },
+  {
+    title: "Fatality Studios",
+    description:
+      "Designed and developed high-performance music production website using Next.js, achieving perfect 100/100 PageSpeed scores despite heavy media content.",
+    live: "https://fatalitystudios.com",
+  },
+  {
     title: "Keyper",
     description:
       "CLI tool for effortlessly managing your environment variables. Save environment variables locally and retrieve them with just one command. Built using only the standard libraries of Go.",
@@ -32,18 +45,5 @@ export const PROJECTS: Project[] = [
       "A modern, performant, and accessible web application. Built using Next.js 14, this app uses server-side rendering to deliver content swiftly, ensuring a seamless experience.",
     live: "https://guestbook-sam.vercel.app",
     repo: "https://github.com/SameerJadav/guestbook",
-  },
-  {
-    title: "Personal Website",
-    description:
-      "My personal website, featuring interactive blogs and a bunch of cool stuff. Built with Astro.",
-    live: SITE.url,
-    repo: "https://github.com/SameerJadav/web",
-  },
-  {
-    title: "Fatality Studios",
-    description:
-      "Music production studio site. The most aesthetically pleasing site that I have ever made. Built with Next.js 14.",
-    live: "https://fatalitystudios.com",
   },
 ];
