@@ -9,7 +9,7 @@
 }
 
 .markdown a {
-  @apply font-medium underline decoration-gray-7 underline-offset-2 transition-colors ease-out hover:text-blue-10 hover:decoration-gray-8 focus-visible:outline-none focus-visible:ring-1  focus-visible:ring-gray-7;
+  @apply font-medium underline decoration-gray-7 underline-offset-2 transition-colors ease-out hover:text-blue-10 hover:decoration-gray-8 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-7;
 }
 
 .markdown strong {
