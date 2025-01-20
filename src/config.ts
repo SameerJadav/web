@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
     title: "Fatality Studios",
     description:
       "Designed and developed high-performance music production website using Next.js, achieving perfect 100/100 PageSpeed scores despite heavy media content.",
-    live: "https://fatalitystudios.com",
+    live: "https://fatalitystudios.vercel.app",
   },
   {
     title: "Keyper",
