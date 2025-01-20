@@ -8,7 +8,6 @@ export async function GET(context) {
     description:
       "A tech-savvy blog offering coding insights, programming tutorials, and personal anecdotes.",
     site: context.site,
-    stylesheet: "/pretty-feed-v3.xsl",
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
